@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Show python versions",
+      "setup": "",
+      "run": "python src/python_versions.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Test Assignment Notebook runs all cells cleanly",
+      "setup": "",
+      "run": "cd notebooks; jupyter nbconvert --execute Assg-07-building-rnn-layers.ipynb --to notebook",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 1.1 test test rnn_cell_forward()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_rnn_cell_forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },  
+    {
+      "name": "Task 1.2 test test rnn_forward()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_rnn_forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 2.1 test test lstm_cell_forward()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_lstm_cell_forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 2.2 test test lstm_forward()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_lstm_forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}
